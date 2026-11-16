@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/register.css">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=account_circle" />
+
+</head>
+<body>
+    <header>
+        <img src="../img/logo.png" alt="" id="icon">
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="news_page.html">Notícias</a></li>
+                <li><a href="event_create.html">Comunidade</a></li>
+                <li><a href="contacts.html">Contatos</a></li>
+            </ul>
+        </nav>
+        <button id="user">
+            <span class="material-symbols-outlined">account_circle</span>
+        </button>
+    </header>
+    <div class="conteiner">
+        <div class="form-image">
+            <img src="../img/logo.png" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="#">Entrar</a></button>
+                    </div>
+                </div>
+
+
+                <!-- inputs -->
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname"> Primeiro Nome</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Digite seu primeiro nome: " required>
+                    </div>
+                
+                    <div class="input-box">
+                        <label for="lastname"> Sobrenome</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Digite seu Sobrenome: " required>
+                    </div>
+                
+                    <div class="input-box">
+                        <label for="CEP">CEP da sua residência</label>
+                        <input type="text" name="CEP" id="CEP" placeholder="Digite seu CEP: " required>
+                    </div>
+                
+                    <div class="input-box">
+                        <label for="logradouro"> Logradouro</label>
+                        <input type="text" name="logradouro" id="logradouro" placeholder="Digite seu logradouro: " required>
+                    </div>
+                
+                    <div class="input-box">
+                        <label for="numero"> Número</label>
+                        <input type="text" name="numero" id="numero" placeholder="Informe seu número: " required>
+                    </div>
+                
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="Informe seu email para contato: " required>
+                    </div>
+                
+                    <div class="input-box">
+                        <label for="telephone">Telefone</label>
+                        <input type="number" name="telephone" id="telephone" placeholder="Informe seu telefone celular:  " required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" id="password" placeholder="Crie uma senha:  " required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirme sua senha</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Cofirme a senha:  " required>
+                    </div>
+                </div>
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

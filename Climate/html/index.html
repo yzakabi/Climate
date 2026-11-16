@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Climate</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Fonte do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Ícone de usuário -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+
+    <!-- Leaflet CSS (mapa interativo) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+<header>
+    <img src="../img/logo.png" alt="" id="icon">
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html">Página Principal</a></li>
+            <li><a href="news_page.html">Notícias</a></li>
+            <li><a href="event_create.html">Comunidade</a></li>
+            <li><a href="contacts.html">Contatos</a></li>
+        </ul>
+    </nav>
+    <button id="user">
+        <span class="material-symbols-outlined">account_circle</span>
+    </button>
+</header>
+
+<main>
+    <!-- Seletor de estado -->
+    <select id="estadoSelect">
+        <option value="">-- Escolha um Estado --</option>
+        <option value="SP">São Paulo</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="BA">Bahia</option>
+    </select>
+
+    <!-- Mapa -->
+    <div id="map"></div>
+
+
+    <!-- Card exibido apenas quando SP for selecionado -->
+    <div id="sp-content" class="cards-container">
+        <div class="card">
+            <img src="../img/alert.png" alt="Imagem 1">
+            <div class="card-text">
+                <h3>Alerta de Chuvas Torrenciais</h3>
+                <p>Há alta probabilidade de chuvas fortes na área, procure abrigo.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Script do mapa -->
+<script src="../js/mapa.js"></script>
+</body>
+</html>
